@@ -5,14 +5,14 @@ require_relative '../lib/stack'
 
 class StackTest < Minitest::Test
   # BEGIN
-  test 'push' do
+  def test_push
     stack = Stack.new
     stack.push! 'ruby'
     assert { !stack.empty? }
     assert { stack.size == 1 }
   end
 
-  test 'pop' do
+  def test_pop
     stack = Stack.new
     stack.push! 'ruby'
     result = stack.pop!
@@ -21,7 +21,7 @@ class StackTest < Minitest::Test
     assert { stack.size.zero? }
   end
 
-  test 'clear' do
+  def test_clear
     stack = Stack.new
     stack.push! 'ruby'
     stack.clear!
