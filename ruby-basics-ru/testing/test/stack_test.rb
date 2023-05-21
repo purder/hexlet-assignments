@@ -8,8 +8,8 @@ class StackTest < Minitest::Test
   test 'push' do
     stack = Stack.new
     stack.push! 'ruby'
-    assert { !stack.empty? } 
-    assert { stack.size == 1 } 
+    assert { !stack.empty? }
+    assert { stack.size == 1 }
   end
 
   test 'pop' do
@@ -18,7 +18,7 @@ class StackTest < Minitest::Test
     result = stack.pop!
     assert { result == 'ruby' }
     assert { stack.empty? }
-    assert { stack.szie == 0 }
+    assert { stack.size.zero? }
   end
 
   test 'clear' do
@@ -26,7 +26,7 @@ class StackTest < Minitest::Test
     stack.push! 'ruby'
     stack.clear!
     assert { stack.empty? }
-    assert { stack.szie == 0 }
+    assert { stack.size.zero? 0 }
   end
   
   # END
