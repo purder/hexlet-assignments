@@ -28,7 +28,6 @@ class StackTest < Minitest::Test
     assert { stack.empty? }
     assert { stack.size.zero? 0 }
   end
-  
   # END
 end
 
