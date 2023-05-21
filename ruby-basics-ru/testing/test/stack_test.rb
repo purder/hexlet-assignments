@@ -26,7 +26,7 @@ class StackTest < Minitest::Test
     stack.push! 'ruby'
     stack.clear!
     assert { stack.empty? }
-    assert { stack.size.zero? 0 }
+    assert { stack.size.zero? }
   end
   # END
 end
